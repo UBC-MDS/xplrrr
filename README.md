@@ -7,8 +7,6 @@
 
 <!-- badges: end -->
 
-### Contributors
-
 Contributors |
 -------------|
 Serhiy Pokrovskyy |
@@ -16,10 +14,13 @@ Furqan Khan |
 Braden Tam |
 Yu Fang |
 
+
+### Overview:
+
 `xplrrr` is an R package to make explatory data analysis (EDA) simple and seamless. EDA is a crucial phase of the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that researchers can properly set up the rest of the analysis. This package will provide the tools required to conduct a thorough EDA.
 
 
-### Installation
+### Installation:
 
 You can install the released version of xplrrr from
 [CRAN](https://CRAN.R-project.org) with:
@@ -42,7 +43,7 @@ devtools::install_github("UBC-MDS/xplrrr")
 - `explore_outliers` will provide a thorough method of identifying outliers in the data.
 - `explore_missing` will show exactly where there is missing data and how much data is missing.
 
-## Example
+### Example:
 
 This is a basic example which shows you how to solve a common problem:
 
