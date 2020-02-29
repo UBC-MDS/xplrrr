@@ -37,3 +37,12 @@ This is a basic example which shows you how to solve a common problem:
 library(xplrrr)
 ## basic example code
 ```
+
+## Contributions
+
+Contributions are welcome, and they are greatly appreciated! Every little bit
+helps, and credit will always be given. See [CONTRIBUTING.md](CONTRIBUTING.md) for further details.
+
+## Contributors
+
+See [CONTRIBUTORS.md](CONTRIBUTORS.md)
