@@ -1,0 +1,32 @@
+Package: xplrrr
+Title: This package makes explatory data analysis (EDA) simple and seamless. EDA is a crucial phase in the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that we can properly set up the rest of the analysis.
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Furqan",
+           family = "Khan",
+           role = c("aut","cre"),
+           email = "furqan@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person(given = "Serhiy",
+           family = "Pokrovskyy",
+           role = c("aut","cre"),
+           email = "Serhiy@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person(given = "Braden",
+           family = "Tam",
+           role = c("aut","cre"),
+           email = "Braden@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person(given = "Yu",
+           family = "Fang",
+           role = c("aut","cre"),
+           email = "Yu@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.2
+Suggests: 
+    testthat (>= 2.1.0)
