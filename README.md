@@ -64,3 +64,13 @@ This R package will build using the [`tidyverse`](https://www.tidyverse.org/) ec
 Contributions are welcome, and they are greatly appreciated! Every little bit
 helps, and credit will always be given. See [CONTRIBUTING.md](CONTRIBUTING.md) for further details.
 
+### Contributors
+
+Contributors |
+-------------|
+Serhiy Pokrovskyy |
+Furqan Khan |
+Braden Tam |
+Yu Fang |
+
+For the complete list of project contributors, see [CONTRIBUTORS.md](CONTRIBUTORS.md)
