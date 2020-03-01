@@ -1,4 +1,5 @@
-#' Gets data summary (NA)
+#' Provides basic summary statistics and wholistic
+#' information about all the features of provided data
 #'
 #' @param data dataframe
 #'
@@ -6,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' get_summary(iris)
-get_summary <- function(data) {
+#' explore_summary(iris)
+explore_summary <- function(data) {
 
 }

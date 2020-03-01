@@ -1,12 +1,12 @@
-#' Gets data outliers
+#' Explores outliers in each feature of dataset based on standard deviation.
 #'
-#' @param data dataframe
+#' @param data A data.frame: The target dataframe to explore
 #'
-#' @return dataframe
+#' @return data.frame: Dataframe with details on the outliers
 #' @export
 #'
 #' @examples
-#' get_outliers(iris)
-get_outliers <- function(data) {
+#' explore_outliers(iris)
+explore_outliers <- function(data) {
 
 }
