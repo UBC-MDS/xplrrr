@@ -1,12 +1,17 @@
-#' Gets correlation plots of features in data (NA)
+#' Returns a cumulative faceted plot on pairwise feature relationships.
 #'
-#' @param data dataframe
+#' The plot consists of NxN mini-charts where N is number of features.
+#' Main diagonal shows feature distribution. Pairwise Pearson correlations
+#' are shown above main diagonal. Pairwise feature joint distributions
+#' are shown below main diagonal.
+#'
+#' @param data A data.frame: The target dataframe to explore
 #'
 #' @return plot
 #' @export
 #'
 #' @examples
-#' get_featureviz(iris)
-get_featureviz <- function(data) {
+#' explore_feature_map(iris)
+explore_feature_map <- function(data) {
 
 }
