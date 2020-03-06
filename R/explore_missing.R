@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' get_na(iris)
-get_na <- function(data) {
+#' explore_missing(iris)
+explore_missing <- function(data, num_rows) {
 
 }
