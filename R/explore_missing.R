@@ -17,6 +17,8 @@
 
 explore_missing <- function(data, num_rows = 0, type = "location") {
 
+  indices <- which(is.na(data), 1)[,1]
+
   if(!is.data.frame(data)){
     stop("Data must be a dataframe or tibble")
   }
@@ -28,8 +30,6 @@ explore_missing <- function(data, num_rows = 0, type = "location") {
   if(!((type == "location") | (type == "count"))){
     stop('Type must be either "count" or "location"')
   }
-
-  indices <- which(is.na(data), 1)[,1]
 
   if(length(indices) == 0){
     stop("There are no missing values in the dataframe")
@@ -45,7 +45,6 @@ explore_missing <- function(data, num_rows = 0, type = "location") {
     }
   }
 
-  #rows = np.unique(append(new_indices, indices))
   rows = sort(unlist(unique(append(new_indices, indices))))
 
   # avoids index error

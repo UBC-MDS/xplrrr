@@ -16,7 +16,8 @@ test_explore_missing <- function() {
   })
 
   test_that('Test type = "count"', {
-    expect_equal(explore_missing(test_1, type = "count")[1,], c(1, 0.1))
+    expect_equal(explore_missing(test_1, type = "count")[1,1], 1)
+    expect_equal(explore_missing(test_1, type = "count")[1,2], 0.1)
   })
 
   test_that("Test value error", {
@@ -38,6 +39,3 @@ test_explore_missing <- function() {
 }
 
 test_explore_missing()
-
-
-

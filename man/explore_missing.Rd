@@ -4,19 +4,23 @@
 \alias{explore_missing}
 \title{Shows exactly where there is missing data and how much data is missing.}
 \usage{
-explore_missing(data)
+explore_missing(data, num_rows = 0, type = "location")
 }
 \arguments{
 \item{data}{A data.frame: The target dataframe to explore}
 
 \item{num_rows}{integer: The number of rows above and below the missing value to output}
+
+\item{type}{character: The desired type of output (location or count)}
 }
 \value{
 dataframe: The resultant dataframes
 }
 \description{
-Returns 2 dataframes: 1 dataframe of exactly where there is
-missing data and another table how much data is missing for each feature.
+explore_missing will explore missing observations within data. It will
+return 1 of 2 tables: 1 table of exactly where there is missing data or
+another table showing how many observations are missing, and the
+proportion of how much data is missing for each feature.
 }
 \examples{
 explore_missing(iris)
