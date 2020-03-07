@@ -4,6 +4,8 @@
 #' @param df dataframe (clean)
 #'
 #' @return a summary dataframe
+#' @export
+#' @import matrixStats
 #'
 #' @examples
 #' explore_summary(iris)
