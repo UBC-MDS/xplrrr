@@ -8,8 +8,8 @@ jobs:
         uses: actions/checkout@master
       - name: Check package and initialize docs
         run: |-
-          Rscript -e "RScript -e "library(devtools); check()""
+          Rscript -e "library(devtools); check()"
       - name: Run tests
         run: |-
-          Rscript -e "RScript -e "library(devtools); test()""
+          Rscript -e "library(devtools); test()"
     container: rocker/verse:latest
