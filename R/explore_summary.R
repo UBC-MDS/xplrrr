@@ -18,7 +18,7 @@ explore_summary <- function(df) {
   for(i in(1:nrow(num_index))){
     index <- c(index, num_index[i,1])
   }
-  num_data <- data[index]
+  num_data <- df[index]
   m <- data.matrix(num_data)
   # create a dataframe for the statistical summary of numeric variables
   summary <- data.frame(colQuantiles(m, probs = seq(from = 0, to =1, by = 0.25), na.rm = TRUE))
