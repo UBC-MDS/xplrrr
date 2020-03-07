@@ -8,7 +8,7 @@ library(gridExtra)
 #' Main diagonal shows feature distribution. Pairwise Pearson correlations
 #' are shown above main diagonal. Pairwise feature joint distributions
 #' are shown below main diagonal.
-#' 
+#'
 #' Note: non-numeric features will be skipped!
 #'
 #' @param data A data.frame: The target dataframe to explore
@@ -19,6 +19,8 @@ library(gridExtra)
 #'
 #' @return plot
 #' @export
+#' @import ggplot2
+#' @import gridExtra
 #'
 #' @examples
 #' explore_feature_map(iris)
