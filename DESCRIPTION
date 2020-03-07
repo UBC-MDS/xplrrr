@@ -32,6 +32,7 @@ Imports:
     tidyverse,
     ggplot2,
     gridExtra,
-    nlme
+    nlme,
+    matrixStats
 Suggests: 
     testthat (>= 2.1.0)
