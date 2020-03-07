@@ -4,7 +4,7 @@
 \alias{explore_outliers}
 \title{Explores outliers in each feature of dataset based on standard deviation.}
 \usage{
-explore_outliers(data)
+explore_outliers(df)
 }
 \arguments{
 \item{data}{A data.frame: The target dataframe to explore}
@@ -16,5 +16,7 @@ data.frame: Dataframe with details on the outliers
 Explores outliers in each feature of dataset based on standard deviation.
 }
 \examples{
-explore_outliers(iris)
+df <- data.frame('col1'= c(1, 2, 1.00, 3, -1, 100),
+'col2'= c(3, 1 ,3, -2, 3, -1))
+explore_outliers(df)
 }
