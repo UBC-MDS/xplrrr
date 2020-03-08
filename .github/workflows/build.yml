@@ -6,6 +6,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@master
+      - name: Install prerequisites
+        run: |-
+          Rscript -e "install.packages('gridExtra'); install.packages('matrixStats'); install.packages('ggplot2'); install.packages('nlme')"
       - name: Check package and initialize docs
         run: |-
           Rscript -e "library(devtools); check()"
