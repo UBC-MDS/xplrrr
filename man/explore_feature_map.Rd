@@ -7,7 +7,7 @@
 explore_feature_map(df)
 }
 \arguments{
-\item{data}{A data.frame: The target dataframe to explore}
+\item{df}{A data.frame: The target dataframe to explore}
 }
 \value{
 plot
