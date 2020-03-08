@@ -11,7 +11,7 @@ library(gridExtra)
 #'
 #' Note: non-numeric features will be skipped!
 #'
-#' @param data A data.frame: The target dataframe to explore
+#' @param df A data.frame: The target dataframe to explore
 #'
 #' @raises Invalid dataframe specified
 #' @raises Dataframe is empty
@@ -19,6 +19,7 @@ library(gridExtra)
 #'
 #' @return plot
 #' @export
+#' @import purrr
 #' @import ggplot2
 #' @import gridExtra
 #'
@@ -31,7 +32,7 @@ explore_feature_map <- function(df) {
         stop("Dataframe is empty")
 
     # Subset dataframe features based on user selection
-    df <- df[, purrr::map_lgl(df, is.numeric)]
+    df <- df[, map_lgl(df, is.numeric)]
 
     grobs <- list()
     g <- 0

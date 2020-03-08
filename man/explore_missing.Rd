@@ -23,5 +23,6 @@ another table showing how many observations are missing, and the
 proportion of how much data is missing for each feature.
 }
 \examples{
-explore_missing(iris)
+explore_missing(data.frame(a = c(1,2), b = c(NA, 3)))
+
 }

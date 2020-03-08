@@ -13,7 +13,8 @@
 #' @export
 #'
 #' @examples
-#' explore_missing(iris)
+#' explore_missing(data.frame(a = c(1,2), b = c(NA, 3)))
+#'
 
 explore_missing <- function(data, num_rows = 0, type = "location") {
 

@@ -21,19 +21,19 @@ test_explore_missing <- function() {
   })
 
   test_that("Test value error", {
-    expect_error(explore_missing(test_2), "Error: There are no missing values in the dataframe")
+    expect_error(explore_missing(test_2), "There are no missing values in the dataframe")
   })
 
   test_that("Test type_1 error", {
-    expect_error(explore_missing(test_1, -5), "Error: num_rows must be a positive integer")
+    expect_error(explore_missing(test_1, -5), "num_rows must be a positive integer")
   })
 
   test_that("Test type_2 error", {
-    expect_error(explore_missing(list(test_1)), "Error: Data must be a dataframe or tibble")
+    expect_error(explore_missing(list(test_1)), "incorrect number of dimensions")
   })
 
   test_that("Test name error", {
-    expect_error(explore_missing(test_1, type = "loc"), 'Error: Type must be either "count" or "location"')
+    expect_error(explore_missing(test_1, type = "loc"), 'Type must be either "count" or "location"')
   })
 
 }
