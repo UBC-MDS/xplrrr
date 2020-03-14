@@ -70,11 +70,11 @@ helps, and credit will always be given. See [CONTRIBUTING.md](CONTRIBUTING.md) f
 
 ### Contributors
 
-Contributors |
--------------|
-Serhiy Pokrovskyy |
-Furqan Khan |
-Braden Tam |
-Yu Fang |
+Name     | Github ID
+------- | -------
+Braden Tam   | bradentam
+Furqan Khan  | fkhan72
+Serhiy Pokrovskyy | pokrovskyy
+Yu Fang | lori94
 
 For the complete list of project contributors, see [CONTRIBUTORS.md](CONTRIBUTORS.md)
