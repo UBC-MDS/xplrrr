@@ -10,7 +10,7 @@ Authors@R:
     person(given = "Serhiy",
            family = "Pokrovskyy",
            role = c("aut","cre"),
-           email = "Serhiy@example.com",
+           email = "serg@pokrovskyy.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
     person(given = "Braden",
            family = "Tam",
@@ -39,5 +39,8 @@ Suggests:
     testthat (>= 2.1.0),
     knitr,
     rmarkdown,
-    covr
+    covr,
+    pkgdown
 VignetteBuilder: knitr
+URL: https://github.com/UBC-MDS/xplrrr
+BugReports: https://github.com/UBC-MDS/xplrrr/issues
