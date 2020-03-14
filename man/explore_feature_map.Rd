@@ -4,10 +4,10 @@
 \alias{explore_feature_map}
 \title{Returns a cumulative faceted plot on pairwise feature relationships.}
 \usage{
-explore_feature_map(data)
+explore_feature_map(df)
 }
 \arguments{
-\item{data}{A data.frame: The target dataframe to explore}
+\item{df}{A data.frame: The target dataframe to explore}
 }
 \value{
 plot
@@ -17,6 +17,9 @@ The plot consists of NxN mini-charts where N is number of features.
 Main diagonal shows feature distribution. Pairwise Pearson correlations
 are shown above main diagonal. Pairwise feature joint distributions
 are shown below main diagonal.
+}
+\details{
+Note: non-numeric features will be skipped!
 }
 \examples{
 explore_feature_map(iris)

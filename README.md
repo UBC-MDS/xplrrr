@@ -30,9 +30,9 @@ devtools::install_github("UBC-MDS/xplrrr")
 
 ### Functions:
 
-- `explore_summary` will display a table with basic summary statistics and wholistic information about the data. 
+- `explore_summary` will display a table with basic summary statistics and wholistic information about the data including column names for both categorical and numerical columns.  
 - `explore_feature_map` will generate a faceted plot on pairwise feature relationships and correlations as well as individual feature distributions.
-- `explore_outliers` will provide a thorough method of identifying outliers in the data.
+- `explore_outliers` will provide a thorough method of identifying outliers in the data based on standard deviation.
 - `explore_missing` will show exactly where there is missing data and how much data is missing.
 
 ### Example:
@@ -42,14 +42,26 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(xplrrr)
 
+explore_summary(my_df)
+explore_feature_map(my_df)
+explore_outliers(my_df)
+explore_missing(my_df, num_rows = 1, type = "location")
+
 ```
 
-- to be defined later as development starts
-
+![](https://raw.githubusercontent.com/UBC-MDS/pyxplr/master/imgs/feature_map.png)
 
 ### R Ecosystem
 
 This R package will build using the [`tidyverse`](https://www.tidyverse.org/) ecosystem that will help first time data science users more easily get started with their data projects. A similar package, [`DataExplorer`](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) is another EDA tool available. There are not many EDA packages that exist because the `tidyverse` ecosystem allows full control of data wrangling and visualization, however users who are not experts with these packages will find `xplrrr` very useful.
+
+### Dependencies
+
+- `ggplot2`
+- `tidyverse`
+- `gridExtra`
+- `testthat`
+- `matrixStats`
 
 ## Contributions
 
