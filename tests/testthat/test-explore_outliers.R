@@ -12,3 +12,10 @@ test_that("Check number of outliers", {
 test_that("Function input must be data.frame", {
   expect_error(explore_outliers(2))
 })
+
+# Checks if explore_outliers throws error if data.frame contains non-numeric element/s
+test_that("entire data.frame must be numeric", {
+  df = data.frame('col1'= c(1, 'a', 1.00, 3, -1, 100),
+                  'col2'= c(3, 1 ,3, -2, 3, -1))
+  expect_error(explore_outliers(df))
+})
