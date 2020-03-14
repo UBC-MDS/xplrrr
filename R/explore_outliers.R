@@ -16,6 +16,7 @@ explore_outliers <- function(df) {
   if(!all(unlist(lapply(df, is.numeric)))){
     stop('entire data.frame must be numeric')}
 
+  df <- na.omit(df)
   df_outlier = data.frame(outlier_count= double())
   df_name <- data.frame(name=names(df))
   for (c in df){
@@ -25,9 +26,7 @@ explore_outliers <- function(df) {
     upper_bound <- m + 2*sd
     outlier_c = 0
     for (n in c){
-      if  (n <= upper_bound && n >= lower_bound){
-      }
-      else{
+      if  (!(n <= upper_bound && n >= lower_bound)){
         outlier_c <- outlier_c + 1
       }
     }
