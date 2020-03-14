@@ -1,3 +1,6 @@
+library("testthat")
+library("matrixStats")
+
 #' Provides basic summary statistics and wholistic
 #' information about all the features of provided data
 #'
@@ -11,8 +14,6 @@
 #' explore_summary(iris)
 #'
 #'
-library("testthat")
-library("matrixStats")
 explore_summary <- function(df) {
   # retrieve only numeric variables
   num_index <- data.frame("index"=which(sapply(colnames(df), function(x) is.numeric(df[, x]))))
