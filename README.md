@@ -14,14 +14,14 @@
 
 ### Installation:
 
-You can install the released version of xplrrr from
+Once the package is approved and released to CRAN, you will be able to install it like this:
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
 install.packages("xplrrr")
 ```
 
-And the development version from [GitHub](https://github.com/) with:
+For now, install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
