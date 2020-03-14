@@ -4,7 +4,7 @@
 # xplrrr
 
 <!-- badges: start -->
-
+![Release](https://github.com/UBC-MDS/xplrrr/workflows/release/badge.svg) [![codecov](https://codecov.io/gh/UBC-MDS/xplrrr/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/xplrrr)
 <!-- badges: end -->
 
 ### Overview
@@ -14,14 +14,14 @@
 
 ### Installation:
 
-You can install the released version of xplrrr from
+Once the package is approved and released to CRAN, you will be able to install it like this:
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
 install.packages("xplrrr")
 ```
 
-And the development version from [GitHub](https://github.com/) with:
+For now, install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -85,7 +85,7 @@ explore_feature_map(iris)
 
 ### R Ecosystem
 
-This R package will build using the [`tidyverse`](https://www.tidyverse.org/) ecosystem that will help first time data science users more easily get started with their data projects. A similar package, [`DataExplorer`](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) is another EDA tool available. There are not many EDA packages that exist because the `tidyverse` ecosystem allows full control of data wrangling and visualization, however users who are not experts with these packages will find `xplrrr` very useful.
+This R package is built using the [`tidyverse`](https://www.tidyverse.org/) ecosystem that will help first time data science users more easily get started with their data projects. A similar package, [`DataExplorer`](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) is another EDA tool available. There are not many EDA packages that exist because the `tidyverse` ecosystem allows full control of data wrangling and visualization, however users who are not experts with these packages will find `xplrrr` very useful.
 
 ### Dependencies
 
@@ -94,6 +94,10 @@ This R package will build using the [`tidyverse`](https://www.tidyverse.org/) ec
 - `gridExtra 2.3 `
 - `testthat 2.3.1`
 - `matrixStats 0.55.0`
+
+## Documentation
+
+Please find up-to-date official documentation at https://ubc-mds.github.io/xplrrr
 
 ## Contributions
 
