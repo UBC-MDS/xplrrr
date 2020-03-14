@@ -4,12 +4,12 @@
 # xplrrr
 
 <!-- badges: start -->
-
+![Release](https://github.com/UBC-MDS/xplrrr/workflows/release/badge.svg) [![codecov](https://codecov.io/gh/UBC-MDS/xplrrr/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/xplrrr)
 <!-- badges: end -->
 
 ### Overview
 
-`xplrrr` is an R package to make explatory data analysis (EDA) simple and seamless. EDA is a crucial phase of the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that researchers can properly set up the rest of the analysis. This package will provide the tools required to conduct a thorough EDA.
+`xplrrr` is an R package to make exploratory data analysis (EDA) simple and seamless. EDA is a crucial phase of the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that researchers can properly set up the rest of the analysis. This package will provide the tools required to conduct a thorough EDA.
 
 
 ### Installation:
@@ -53,7 +53,7 @@ explore_missing(my_df, num_rows = 1, type = "location")
 
 ### R Ecosystem
 
-This R package will build using the [`tidyverse`](https://www.tidyverse.org/) ecosystem that will help first time data science users more easily get started with their data projects. A similar package, [`DataExplorer`](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) is another EDA tool available. There are not many EDA packages that exist because the `tidyverse` ecosystem allows full control of data wrangling and visualization, however users who are not experts with these packages will find `xplrrr` very useful.
+This R package is built using the [`tidyverse`](https://www.tidyverse.org/) ecosystem that will help first time data science users more easily get started with their data projects. A similar package, [`DataExplorer`](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) is another EDA tool available. There are not many EDA packages that exist because the `tidyverse` ecosystem allows full control of data wrangling and visualization, however users who are not experts with these packages will find `xplrrr` very useful.
 
 ### Dependencies
 
@@ -62,6 +62,10 @@ This R package will build using the [`tidyverse`](https://www.tidyverse.org/) ec
 - `gridExtra`
 - `testthat`
 - `matrixStats`
+
+## Documentation
+
+Please find up-to-date official documentation at https://ubc-mds.github.io/xplrrr
 
 ## Contributions
 
