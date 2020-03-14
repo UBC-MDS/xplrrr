@@ -50,6 +50,7 @@ explore_missing(my_df, num_rows = 1, type = "location")
 ```
 
 ![](https://raw.githubusercontent.com/UBC-MDS/pyxplr/master/imgs/feature_map.png)
+![](https://raw.githubusercontent.com/UBC-MDS/xplrrr/master/imgs/summary.png)
 
 ### R Ecosystem
 
