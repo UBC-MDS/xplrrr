@@ -41,3 +41,5 @@ Suggests:
     rmarkdown,
     covr
 VignetteBuilder: knitr
+URL: https://github.com/UBC-MDS/xplrrr
+BugReports: https://github.com/UBC-MDS/xplrrr/issues
