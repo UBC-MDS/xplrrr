@@ -4,7 +4,7 @@
 # xplrrr
 
 <!-- badges: start -->
-![Release](https://github.com/UBC-MDS/xplrrr/workflows/release/badge.svg) [![codecov](https://codecov.io/gh/UBC-MDS/xplrrr/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/xplrrr)
+![Release](https://github.com/UBC-MDS/xplrrr/workflows/R-CMD-check/badge.svg)  [![codecov](https://codecov.io/gh/UBC-MDS/xplrrr/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/xplrrr)
 <!-- badges: end -->
 
 ### Overview
@@ -97,7 +97,7 @@ This R package is built using the [`tidyverse`](https://www.tidyverse.org/) ecos
 
 ## Documentation
 
-Please find up-to-date official documentation at https://ubc-mds.github.io/xplrrr
+Please find up-to-date official documentation at [https://ubc-mds.github.io/xplrrr](https://ubc-mds.github.io/xplrrr/index.html)
 
 ## Contributions
 
