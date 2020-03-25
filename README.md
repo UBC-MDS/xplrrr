@@ -89,11 +89,11 @@ This R package will build using the [`tidyverse`](https://www.tidyverse.org/) ec
 
 ### Dependencies
 
-- `ggplot2 3.2.1 `
-- `purrr 0.3.3`
-- `gridExtra 2.3 `
-- `testthat 2.3.1`
-- `matrixStats 0.55.0`
+- [`ggplot2 3.2.1`](https://github.com/tidyverse/ggplot2)  
+- [`purrr 0.3.3`](https://github.com/tidyverse/purrr)  
+- [`gridExtra 2.3`](https://github.com/cran/gridExtra)  
+- [`testthat 2.3.1`](https://github.com/r-lib/testthat)  
+- [`matrixStats 0.55.0`](https://github.com/HenrikBengtsson/matrixStats)  
 
 ## Contributions
 
@@ -103,10 +103,10 @@ helps, and credit will always be given. See [CONTRIBUTING.md](CONTRIBUTING.md) f
 ### Contributors
 
 Name     | Github ID
-:------- |:-------
-Braden Tam   | bradentam
-Furqan Khan  | fkhan72
-Serhiy Pokrovskyy | pokrovskyy
-Yu Fang | lori94
+------- | -------
+Braden Tam   | [bradentam](https://github.com/bradentam)  
+Furqan Khan  | [fkhan72](https://github.com/fkhan72)
+Serhiy Pokrovskyy | [pokrovskyy](https://github.com/pokrovskyy)
+Yu Fang | [lori94](https://github.com/lori94)  
 
 For the complete list of project contributors, see [CONTRIBUTORS.md](CONTRIBUTORS.md)
