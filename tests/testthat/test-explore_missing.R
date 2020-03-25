@@ -29,6 +29,10 @@ test_explore_missing <- function() {
   })
 
   test_that("Test type_2 error", {
+    expect_error(explore_missing(test_1, "three"), "num_rows must be a valid integer")
+  })
+
+  test_that("Test type_3 error", {
     expect_error(explore_missing(list(test_1)), "incorrect number of dimensions")
   })
 

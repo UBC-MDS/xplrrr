@@ -1,9 +1,9 @@
 #' Shows exactly where there is missing data and how much data is missing.
 #'
-#' explore_missing will explore missing observations within data. It will
-#' return 1 of 2 tables: 1 table of exactly where there is missing data or
-#' another table showing how many observations are missing, and the
-#' proportion of how much data is missing for each feature.
+#' explore_missing will identify missing observations within data. It will
+#' return 1 of 2 tables: (location) 1 table of the exact location in the dataframe
+#' where there is missing data or (count) another table showing how many observations
+#' are missing and the proportion of how much data is missing for each feature.
 #'
 #' @param data A data.frame: The target dataframe to explore
 #' @param num_rows integer: The number of rows above and below the missing value to output
@@ -28,6 +28,10 @@ explore_missing <- function(data, num_rows = 0, type = "location") {
     stop("num_rows must be a positive integer")
   }
 
+  if(typeof(num_rows) != "double"){
+    stop("num_rows must be a valid integer")
+  }
+
   if(!((type == "location") | (type == "count"))){
     stop('Type must be either "count" or "location"')
   }
@@ -46,10 +50,10 @@ explore_missing <- function(data, num_rows = 0, type = "location") {
     }
   }
 
-  rows = sort(unlist(unique(append(new_indices, indices))))
+  rows <- sort(unlist(unique(append(new_indices, indices))))
 
   # avoids index error
-  rows = rows[(rows > 0) & (rows <= dim(data)[1])]
+  rows <- rows[(rows > 0) & (rows <= dim(data)[1])]
 
   # number of missing values
   if(type == "count"){
