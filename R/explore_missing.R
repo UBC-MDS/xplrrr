@@ -3,7 +3,8 @@
 #' explore_missing will identify missing observations within data. It will
 #' return 1 of 2 tables: (location) 1 table of the exact location in the dataframe
 #' where there is missing data or (count) another table showing how many observations
-#' are missing and the proportion of how much data is missing for each feature.
+#' are missing and the proportion of how much data is missing for each feature. Note:
+#' this function cannot detect entries of empty strings as missing.
 #'
 #' @param data A data.frame: The target dataframe to explore
 #' @param num_rows integer: The number of rows above and below the missing value to output
