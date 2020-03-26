@@ -5,7 +5,7 @@
 #'
 #' @return a summary dataframe
 #' @export
-#' @importFrom matrixStats colMeans2 colVars
+#' @importFrom matrixStats colMeans2 colVars colQuantiles
 #'
 #' @examples
 #' explore_summary(iris)
