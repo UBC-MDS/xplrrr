@@ -6,7 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Explores outliers in each feature of dataset based on standard deviation. — explore_outliers • xplrrr</title>
+<title>Explores outliers in each feature of dataset based on standard deviation range.
+Before calculation, NA rows are dropped and only numeric columns are — explore_outliers • xplrrr</title>
 
 
 <!-- jquery -->
@@ -35,8 +36,10 @@
 
 
 
-<meta property="og:title" content="Explores outliers in each feature of dataset based on standard deviation. — explore_outliers" />
-<meta property="og:description" content="Explores outliers in each feature of dataset based on standard deviation." />
+<meta property="og:title" content="Explores outliers in each feature of dataset based on standard deviation range.
+Before calculation, NA rows are dropped and only numeric columns are — explore_outliers" />
+<meta property="og:description" content="Explores outliers in each feature of dataset based on standard deviation range.
+Before calculation, NA rows are dropped and only numeric columns are" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -117,16 +120,18 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Explores outliers in each feature of dataset based on standard deviation.</h1>
+    <h1>Explores outliers in each feature of dataset based on standard deviation range.
+Before calculation, NA rows are dropped and only numeric columns are</h1>
     <small class="dont-index">Source: <a href='https://github.com/UBC-MDS/xplrrr/blob/master/R/explore_outliers.R'><code>R/explore_outliers.R</code></a></small>
     <div class="hidden name"><code>explore_outliers.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Explores outliers in each feature of dataset based on standard deviation.</p>
+    <p>Explores outliers in each feature of dataset based on standard deviation range.
+Before calculation, NA rows are dropped and only numeric columns are</p>
     </div>
 
-    <pre class="usage"><span class='fu'>explore_outliers</span>(<span class='no'>df</span>)</pre>
+    <pre class="usage"><span class='fu'>explore_outliers</span>(<span class='no'>df</span>, <span class='no'>std_range</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -134,6 +139,10 @@
     <tr>
       <th>df</th>
       <td><p>A data.frame: The target dataframe to explore</p></td>
+    </tr>
+    <tr>
+      <th>std_range</th>
+      <td><p>A integer: The range of standard deviation</p></td>
     </tr>
     </table>
 
@@ -144,7 +153,7 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>df</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span>(<span class='st'>'col1'</span><span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>, <span class='fl'>2</span>, <span class='fl'>1.00</span>, <span class='fl'>3</span>, -<span class='fl'>1</span>, <span class='fl'>100</span>),
 <span class='st'>'col2'</span><span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>3</span>, <span class='fl'>1</span> ,<span class='fl'>3</span>, -<span class='fl'>2</span>, <span class='fl'>3</span>, -<span class='fl'>1</span>))
-<span class='fu'>explore_outliers</span>(<span class='no'>df</span>)</div><div class='output co'>#&gt;      outlier_count
+<span class='fu'>explore_outliers</span>(<span class='no'>df</span>, <span class='fl'>2</span>)</div><div class='output co'>#&gt;      outlier_count
 #&gt; col1             1
 #&gt; col2             0</div></pre>
   </div>

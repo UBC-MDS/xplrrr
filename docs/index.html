@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>This package makes explatory data analysis (EDA) simple and seamless. EDA is a crucial phase in the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that we can properly set up the rest of the analysis. • xplrrr</title>
+<title>This package makes exploratory data analysis (EDA) simple and seamless. EDA is a crucial phase in the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that we can properly set up the rest of the analysis. • xplrrr</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="This package makes explatory data analysis (EDA) simple and seamless. EDA is a crucial phase in the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that we can properly set up the rest of the analysis.">
+<script src="pkgdown.js"></script><meta property="og:title" content="This package makes exploratory data analysis (EDA) simple and seamless. EDA is a crucial phase in the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that we can properly set up the rest of the analysis.">
 <meta property="og:description" content="What the package does (one paragraph).">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -105,24 +105,58 @@
 <code>explore_summary</code> will display a table with basic summary statistics and wholistic information about the data including column names for both categorical and numerical columns.<br>
 </li>
 <li>
-<code>explore_feature_map</code> will generate a faceted plot on pairwise feature relationships and correlations as well as individual feature distributions.</li>
-<li>
 <code>explore_outliers</code> will provide a thorough method of identifying outliers in the data based on standard deviation.</li>
 <li>
 <code>explore_missing</code> will show exactly where there is missing data and how much data is missing.</li>
+<li>
+<code>explore_feature_map</code> will generate a faceted plot on pairwise feature relationships and correlations as well as individual feature distributions.</li>
 </ul>
 </div>
-<div id="example" class="section level3">
+<div id="usage" class="section level3">
 <h3 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example:</h3>
+<a href="#usage" class="anchor"></a>Usage:</h3>
 <p>This is a basic example which shows you how to solve a common problem:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(xplrrr)</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="reference/explore_summary.html">explore_summary</a></span>(my_df)</a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw"><a href="reference/explore_feature_map.html">explore_feature_map</a></span>(my_df)</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw"><a href="reference/explore_outliers.html">explore_outliers</a></span>(my_df)</a>
-<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="kw"><a href="reference/explore_missing.html">explore_missing</a></span>(my_df, <span class="dt">num_rows =</span> <span class="dv">1</span>, <span class="dt">type =</span> <span class="st">"location"</span>)</a></code></pre></div>
-<p><img src="https://raw.githubusercontent.com/UBC-MDS/pyxplr/master/imgs/feature_map.png"></p>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="reference/explore_summary.html">explore_summary</a></span>(airquality)</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt;         min. 1st Qu. median 3rd Qu.  max.       mean         var</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt; Ozone    1.0   18.00   31.5   63.25 168.0  42.129310 1088.200525</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt; Solar.R  7.0  115.75  205.0  258.75 334.0 185.931507 8110.519414</span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt; Wind     1.7    7.40    9.7   11.50  20.7   9.957516   12.411539</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt; Temp    56.0   72.00   79.0   85.00  97.0  77.882353   89.591331</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt; Month    5.0    6.00    7.0    8.00   9.0   6.993464    2.006536</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt; Day      1.0    8.00   16.0   23.00  31.0  15.803922   78.579721</span></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="kw"><a href="reference/explore_outliers.html">explore_outliers</a></span>(airquality)</a>
+<a class="sourceLine" id="cb3-13" data-line-number="13"><span class="co">#&gt;         outlier_count</span></a>
+<a class="sourceLine" id="cb3-14" data-line-number="14"><span class="co">#&gt; Ozone               6</span></a>
+<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co">#&gt; Solar.R             0</span></a>
+<a class="sourceLine" id="cb3-16" data-line-number="16"><span class="co">#&gt; Wind                5</span></a>
+<a class="sourceLine" id="cb3-17" data-line-number="17"><span class="co">#&gt; Temp                3</span></a>
+<a class="sourceLine" id="cb3-18" data-line-number="18"><span class="co">#&gt; Month               0</span></a>
+<a class="sourceLine" id="cb3-19" data-line-number="19"><span class="co">#&gt; Day                 0</span></a>
+<a class="sourceLine" id="cb3-20" data-line-number="20"></a>
+<a class="sourceLine" id="cb3-21" data-line-number="21">missing &lt;-<span class="st"> </span><span class="kw"><a href="reference/explore_missing.html">explore_missing</a></span>(airquality, <span class="dt">type =</span> <span class="st">"location"</span>)</a>
+<a class="sourceLine" id="cb3-22" data-line-number="22"><span class="kw"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(missing)</a>
+<a class="sourceLine" id="cb3-23" data-line-number="23"><span class="co">#&gt;    Ozone Solar.R Wind Temp Month Day   Index</span></a>
+<a class="sourceLine" id="cb3-24" data-line-number="24"><span class="co">#&gt; 5     NA      NA 14.3   56     5   5       5</span></a>
+<a class="sourceLine" id="cb3-25" data-line-number="25"><span class="co">#&gt; 6     28      NA 14.9   66     5   6       6</span></a>
+<a class="sourceLine" id="cb3-26" data-line-number="26"><span class="co">#&gt; 10    NA     194  8.6   69     5  10      10</span></a>
+<a class="sourceLine" id="cb3-27" data-line-number="27"><span class="co">#&gt; 11     7      NA  6.9   74     5  11      11</span></a>
+<a class="sourceLine" id="cb3-28" data-line-number="28"><span class="co">#&gt; 25    NA      66 16.6   57     5  25      25</span></a>
+<a class="sourceLine" id="cb3-29" data-line-number="29"><span class="co">#&gt; 26    NA     266 14.9   58     5  26      26</span></a>
+<a class="sourceLine" id="cb3-30" data-line-number="30"></a>
+<a class="sourceLine" id="cb3-31" data-line-number="31"><span class="kw"><a href="reference/explore_missing.html">explore_missing</a></span>(airquality, <span class="dt">type =</span> <span class="st">"count"</span>)</a>
+<a class="sourceLine" id="cb3-32" data-line-number="32"><span class="co">#&gt;         Number.of.missing.values Proportion.of.missing.data</span></a>
+<a class="sourceLine" id="cb3-33" data-line-number="33"><span class="co">#&gt; Ozone                         37                 0.24183007</span></a>
+<a class="sourceLine" id="cb3-34" data-line-number="34"><span class="co">#&gt; Solar.R                        7                 0.04575163</span></a>
+<a class="sourceLine" id="cb3-35" data-line-number="35"><span class="co">#&gt; Wind                           0                 0.00000000</span></a>
+<a class="sourceLine" id="cb3-36" data-line-number="36"><span class="co">#&gt; Temp                           0                 0.00000000</span></a>
+<a class="sourceLine" id="cb3-37" data-line-number="37"><span class="co">#&gt; Month                          0                 0.00000000</span></a>
+<a class="sourceLine" id="cb3-38" data-line-number="38"><span class="co">#&gt; Day                            0                 0.00000000</span></a>
+<a class="sourceLine" id="cb3-39" data-line-number="39"></a>
+<a class="sourceLine" id="cb3-40" data-line-number="40"><span class="kw"><a href="reference/explore_feature_map.html">explore_feature_map</a></span>(iris)</a></code></pre></div>
+<p><img src="/imgs/feature_map.png"></p>
 </div>
 <div id="r-ecosystem" class="section level3">
 <h3 class="hasAnchor">
@@ -133,11 +167,19 @@
 <h3 class="hasAnchor">
 <a href="#dependencies" class="anchor"></a>Dependencies</h3>
 <ul>
-<li><code>ggplot2</code></li>
-<li><code>tidyverse</code></li>
-<li><code>gridExtra</code></li>
-<li><code>testthat</code></li>
-<li><code>matrixStats</code></li>
+<li>
+<a href="https://github.com/tidyverse/ggplot2"><code>ggplot2 3.2.1</code></a><br>
+</li>
+<li>
+<a href="https://github.com/tidyverse/purrr"><code>purrr 0.3.3</code></a><br>
+</li>
+<li>
+<a href="https://github.com/cran/gridExtra"><code>gridExtra 2.3</code></a><br>
+</li>
+<li>
+<a href="https://github.com/r-lib/testthat"><code>testthat 2.3.1</code></a><br>
+</li>
+<li><a href="https://github.com/HenrikBengtsson/matrixStats"><code>matrixStats 0.55.0</code></a></li>
 </ul>
 </div>
 <div id="documentation" class="section level2">
@@ -160,19 +202,19 @@
 <tbody>
 <tr class="odd">
 <td>Braden Tam</td>
-<td>bradentam</td>
+<td><a href="https://github.com/bradentam">bradentam</a></td>
 </tr>
 <tr class="even">
 <td>Furqan Khan</td>
-<td>fkhan72</td>
+<td><a href="https://github.com/fkhan72">fkhan72</a></td>
 </tr>
 <tr class="odd">
 <td>Serhiy Pokrovskyy</td>
-<td>pokrovskyy</td>
+<td><a href="https://github.com/pokrovskyy">pokrovskyy</a></td>
 </tr>
 <tr class="even">
 <td>Yu Fang</td>
-<td>lori94</td>
+<td><a href="https://github.com/lori94">lori94</a></td>
 </tr>
 </tbody>
 </table>
