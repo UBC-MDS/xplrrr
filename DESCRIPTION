@@ -32,6 +32,7 @@ Imports:
     matrixStats
 Suggests: 
     testthat (>= 2.1.0),
+    dplyr,
     knitr,
     rmarkdown,
     covr,
