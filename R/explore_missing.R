@@ -59,7 +59,7 @@ explore_missing <- function(data, num_rows = 0, type = "location") {
 
   # location of missing data
   if(type == "location"){
-    return(data.frame(data[rows,], 'Indices' = rows))
+    return(data.frame(data[rows,], 'Index' = rows))
   }
 
 }

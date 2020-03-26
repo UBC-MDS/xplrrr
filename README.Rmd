@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # xplrrr
 
 <!-- badges: start -->
+[![R build status](https://github.com/UBC-MDS/xplrrr/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/xplrrr/actions)
 <!-- badges: end -->
 
 This package makes explatory data analysis (EDA) simple and seamless. EDA is a crucial phase in the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that we can properly set up the rest of the analysis.

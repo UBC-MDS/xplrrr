@@ -21,6 +21,13 @@ are shown below main diagonal.
 \details{
 Note: non-numeric features will be skipped!
 }
+\note{
+Raises: Invalid dataframe specified
+
+Raises: Dataframe is empty
+
+Raises: No numeric columns present in the dataframe
+}
 \examples{
 explore_feature_map(iris)
 }

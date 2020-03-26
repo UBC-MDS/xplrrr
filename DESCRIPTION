@@ -1,27 +1,22 @@
 Package: xplrrr
 Title: This package makes explatory data analysis (EDA) simple and seamless. EDA is a crucial phase in the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that we can properly set up the rest of the analysis.
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Furqan",
-           family = "Khan",
-           role = c("aut","cre"),
-           email = "furqan@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-    person(given = "Serhiy",
-           family = "Pokrovskyy",
-           role = c("aut","cre"),
-           email = "Serhiy@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-    person(given = "Braden",
-           family = "Tam",
-           role = c("aut","cre"),
-           email = "Braden@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-    person(given = "Yu",
-           family = "Fang",
-           role = c("aut","cre"),
-           email = "Yu@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+Version: 0.3.5.358
+Authors@R: c(person(given = "Furqan",
+                   family = "Khan",
+                   role = c("aut"),
+                   email = "furqan@example.com"),
+            person(given = "Serhiy",
+                   family = "Pokrovskyy",
+                   role = c("aut"),
+                   email = "serg@pokrovskyy.com"),
+            person(given = "Braden",
+                   family = "Tam",
+                   role = c("aut"),
+                   email = "Braden@example.com"),
+            person(given = "Yu",
+                   family = "Fang",
+                   role = c("aut","cre"),
+                   email = "Yu@example.com"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -36,4 +31,11 @@ Imports:
     nlme,
     matrixStats
 Suggests: 
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown,
+    covr,
+    pkgdown
+VignetteBuilder: knitr
+URL: https://github.com/UBC-MDS/xplrrr
+BugReports: https://github.com/UBC-MDS/xplrrr/issues

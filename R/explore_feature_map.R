@@ -13,9 +13,9 @@ library(gridExtra)
 #'
 #' @param df A data.frame: The target dataframe to explore
 #'
-#' @raises Invalid dataframe specified
-#' @raises Dataframe is empty
-#' @raises No numeric columns present in the dataframe
+#' @note Raises: Invalid dataframe specified
+#' @note Raises: Dataframe is empty
+#' @note Raises: No numeric columns present in the dataframe
 #'
 #' @return plot
 #' @export
