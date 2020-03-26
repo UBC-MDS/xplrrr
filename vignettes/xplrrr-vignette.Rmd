@@ -48,7 +48,7 @@ explore_summary(iris)
 Let's see if there are any outliers:
 
 ```{r eplore_outliers}
-explore_outliers(iris %>% select('Sepal.Length', 'Sepal.Width', 'Petal.Length', 'Petal.Width'))
+explore_outliers(iris %>% select('Sepal.Length', 'Sepal.Width', 'Petal.Length', 'Petal.Width'), 2)
 ```
 
 Finally, lets test see if `airquality` dataset has any missing data:

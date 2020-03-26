@@ -2,21 +2,25 @@
 % Please edit documentation in R/explore_outliers.R
 \name{explore_outliers}
 \alias{explore_outliers}
-\title{Explores outliers in each feature of dataset based on standard deviation.}
+\title{Explores outliers in each feature of dataset based on standard deviation range.
+Before calculation, NA rows are dropped and only numeric columns are}
 \usage{
-explore_outliers(df)
+explore_outliers(df, std_range)
 }
 \arguments{
 \item{df}{A data.frame: The target dataframe to explore}
+
+\item{std_range}{A integer: The range of standard deviation}
 }
 \value{
 data.frame: Dataframe with details on the outliers
 }
 \description{
-Explores outliers in each feature of dataset based on standard deviation.
+Explores outliers in each feature of dataset based on standard deviation range.
+Before calculation, NA rows are dropped and only numeric columns are
 }
 \examples{
 df <- data.frame('col1'= c(1, 2, 1.00, 3, -1, 100),
 'col2'= c(3, 1 ,3, -2, 3, -1))
-explore_outliers(df)
+explore_outliers(df, 2)
 }
