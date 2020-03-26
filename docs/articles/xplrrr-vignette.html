@@ -99,7 +99,7 @@
 <p>The package was developed as part of UBC MDS course.</p>
 <p>First, start with loading the library</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(xplrrr)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(tidyverse)</a></code></pre></div>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(dplyr)</a></code></pre></div>
 <p>In this vignette we will be working with the <code>iris</code> dataset.</p>
 <p>At first, let’s visualize our features and their pairwise correlations and distributions:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="../reference/explore_feature_map.html">explore_feature_map</a></span>(iris)</a></code></pre></div>
@@ -112,7 +112,7 @@
 ## Petal.Length  1.0     1.6   4.35     5.1  6.9 3.758000 3.1162779
 ## Petal.Width   0.1     0.3   1.30     1.8  2.5 1.199333 0.5810063</code></pre>
 <p>Let’s see if there are any outliers:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="../reference/explore_outliers.html">explore_outliers</a></span>(iris <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="st">'Sepal.Length'</span>, <span class="st">'Sepal.Width'</span>, <span class="st">'Petal.Length'</span>, <span class="st">'Petal.Width'</span>), <span class="dv">2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="../reference/explore_outliers.html">explore_outliers</a></span>(iris <span class="op">%&gt;%</span><span class="st"> </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span>(<span class="st">'Sepal.Length'</span>, <span class="st">'Sepal.Width'</span>, <span class="st">'Petal.Length'</span>, <span class="st">'Petal.Width'</span>), <span class="dv">2</span>)</a></code></pre></div>
 <pre><code>##              outlier_count
 ## Sepal.Length             6
 ## Sepal.Width              5

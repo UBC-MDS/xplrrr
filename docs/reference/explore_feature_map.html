@@ -148,12 +148,14 @@ are shown below main diagonal.</p>
     <p>plot</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Note: non-numeric features will be skipped!</p>
+    <p>Non-numeric features will be skipped. All passed features should
+not include any missing data, otherwise an error will be raised</p>
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
     <p>Raises: Invalid dataframe specified</p>
 <p>Raises: Dataframe is empty</p>
 <p>Raises: No numeric columns present in the dataframe</p>
+<p>Raises: Features must not include missing data</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>explore_feature_map</span>(<span class='no'>iris</span>)</div><div class='img'><img src='explore_feature_map-1.png' alt='' width='700' height='433' /></div></pre>
