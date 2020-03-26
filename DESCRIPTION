@@ -1,5 +1,5 @@
 Package: xplrrr
-Title: This package makes explatory data analysis (EDA) simple and seamless. EDA is a crucial phase in the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that we can properly set up the rest of the analysis.
+Title: This package makes exploratory data analysis (EDA) simple and seamless. EDA is a crucial phase in the data science workflow as it allows us get a fist glimpse of the data. It is important to identify statistical characteristics of the data so that we can properly set up the rest of the analysis.
 Version: 0.3.5.358
 Authors@R: c(person(given = "Furqan",
                    family = "Khan",
