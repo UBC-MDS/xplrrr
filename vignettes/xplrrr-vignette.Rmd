@@ -1,0 +1,58 @@
+---
+title: "Using xplrrr"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{xplrrr-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(warning = FALSE,
+                      message = FALSE,
+                      # collapse = TRUE,
+                      # comment = "#>",
+                      dpi = 480)
+```
+
+`xplrrr` aims to simplify data exploration with R in four aspects:
+
+- feature correlation visualization
+- data summary
+- outliers detection 
+- missing data
+
+The package was developed as part of UBC MDS course.
+
+First, start with loading the library
+
+```{r setup}
+library(xplrrr)
+library(tidyverse)
+```
+
+In this vignette we will be working with the `iris` dataset.
+
+At first, let's visualize our features and their pairwise correlations and distributions:
+
+```{r eplore_feature_map}
+explore_feature_map(iris)
+```
+
+Now let's explore summary statistics:
+
+```{r eplore_summary}
+explore_summary(iris)
+```
+
+Let's see if there are any outliers:
+
+```{r eplore_outliers}
+explore_outliers(iris %>% select('Sepal.Length', 'Sepal.Width', 'Petal.Length', 'Petal.Width'))
+```
+
+Finally, lets test see if `airquality` dataset has any missing data:
+
+```{r explore_missing}
+explore_missing(airquality)
+```
