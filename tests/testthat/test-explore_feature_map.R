@@ -1,5 +1,3 @@
-library(tidyverse)
-
 test_that("Check input dataframe type", {
   expect_error(explore_feature_map(1), "Invalid dataframe specified", fixed=TRUE)
 })

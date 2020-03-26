@@ -1,7 +1,3 @@
-library(ggplot2)
-library(tidyverse)
-library(gridExtra)
-
 #' Returns a cumulative faceted plot on pairwise feature relationships.
 #'
 #' The plot consists of NxN mini-charts where N is number of features.
@@ -21,7 +17,8 @@ library(gridExtra)
 #' @export
 #' @import purrr
 #' @import ggplot2
-#' @import gridExtra
+#' @importFrom gridExtra grid.arrange
+#' @import dplyr
 #'
 #' @examples
 #' explore_feature_map(iris)

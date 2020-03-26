@@ -1,5 +1,3 @@
-library(tidyverse)
-
 #' Explores outliers in each feature of dataset based on standard deviation range.
 #' Before calculation, NA rows are dropped and only numeric columns are
 #` considered for calculation.
