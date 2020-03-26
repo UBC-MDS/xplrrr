@@ -12,8 +12,7 @@ library("matrixStats")
 #'
 #' @examples
 #' explore_summary(iris)
-#'
-#'
+
 explore_summary <- function(df) {
   # retrieve only numeric variables
   num_index <- data.frame("index"=which(sapply(colnames(df), function(x) is.numeric(df[, x]))))
