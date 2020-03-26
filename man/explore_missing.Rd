@@ -17,10 +17,11 @@ explore_missing(data, num_rows = 0, type = "location")
 dataframe: The resultant dataframes
 }
 \description{
-explore_missing will explore missing observations within data. It will
-return 1 of 2 tables: 1 table of exactly where there is missing data or
-another table showing how many observations are missing, and the
-proportion of how much data is missing for each feature.
+explore_missing will identify missing observations within data. It will
+return 1 of 2 tables: (location) 1 table of the exact location in the dataframe
+where there is missing data or (count) another table showing how many observations
+are missing and the proportion of how much data is missing for each feature. Note:
+this function cannot detect entries of empty strings as missing.
 }
 \examples{
 explore_missing(data.frame(a = c(1,2), b = c(NA, 3)))
