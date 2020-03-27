@@ -21,6 +21,6 @@ Before calculation, NA rows are dropped and only numeric columns are
 }
 \examples{
 df <- data.frame('col1'= c(1, 2, 1.00, 3, -1, 100),
-'col2'= c(3, 1 ,3, -2, 3, -1))
+                 'col2'= c(3, 1 ,3, -2, 3, -1))
 explore_outliers(df, 2)
 }

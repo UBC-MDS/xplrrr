@@ -28,7 +28,7 @@ First, start with loading the library
 
 ```{r setup}
 library(xplrrr)
-library(tidyverse)
+library(dplyr)
 ```
 
 In this vignette we will be working with the `iris` dataset.

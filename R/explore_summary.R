@@ -1,6 +1,3 @@
-library("testthat")
-library("matrixStats")
-
 #' Provides basic summary statistics and wholistic
 #' information about all the features of provided data
 #'
@@ -8,7 +5,7 @@ library("matrixStats")
 #'
 #' @return a summary dataframe
 #' @export
-#' @import matrixStats
+#' @importFrom matrixStats colMeans2 colVars colQuantiles
 #'
 #' @examples
 #' explore_summary(iris)

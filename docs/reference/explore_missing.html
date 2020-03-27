@@ -36,10 +36,11 @@
 
 
 <meta property="og:title" content="Shows exactly where there is missing data and how much data is missing. — explore_missing" />
-<meta property="og:description" content="explore_missing will explore missing observations within data. It will
-return 1 of 2 tables: 1 table of exactly where there is missing data or
-another table showing how many observations are missing, and the
-proportion of how much data is missing for each feature." />
+<meta property="og:description" content="explore_missing will identify missing observations within data. It will
+return 1 of 2 tables: (location) 1 table of the exact location in the dataframe
+where there is missing data or (count) another table showing how many observations
+are missing and the proportion of how much data is missing for each feature. Note:
+this function cannot detect entries of empty strings as missing." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -72,7 +73,7 @@ proportion of how much data is missing for each feature." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">xplrrr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.5.358</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.4.1.87</span>
       </span>
     </div>
 
@@ -126,10 +127,11 @@ proportion of how much data is missing for each feature." />
     </div>
 
     <div class="ref-description">
-    <p>explore_missing will explore missing observations within data. It will
-return 1 of 2 tables: 1 table of exactly where there is missing data or
-another table showing how many observations are missing, and the
-proportion of how much data is missing for each feature.</p>
+    <p>explore_missing will identify missing observations within data. It will
+return 1 of 2 tables: (location) 1 table of the exact location in the dataframe
+where there is missing data or (count) another table showing how many observations
+are missing and the proportion of how much data is missing for each feature. Note:
+this function cannot detect entries of empty strings as missing.</p>
     </div>
 
     <pre class="usage"><span class='fu'>explore_missing</span>(<span class='no'>data</span>, <span class='kw'>num_rows</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"location"</span>)</pre>
@@ -156,8 +158,8 @@ proportion of how much data is missing for each feature.</p>
     <p>dataframe: The resultant dataframes</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>explore_missing</span>(<span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span>(<span class='kw'>a</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>,<span class='fl'>2</span>), <span class='kw'>b</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>NA</span>, <span class='fl'>3</span>)))</div><div class='output co'>#&gt;   a  b Indices
-#&gt; 1 1 NA       1</div><div class='input'>
+    <pre class="examples"><div class='input'><span class='fu'>explore_missing</span>(<span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span>(<span class='kw'>a</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>1</span>,<span class='fl'>2</span>), <span class='kw'>b</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>NA</span>, <span class='fl'>3</span>)))</div><div class='output co'>#&gt;   a  b Index
+#&gt; 1 1 NA     1</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">

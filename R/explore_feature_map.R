@@ -1,7 +1,3 @@
-library(ggplot2)
-library(tidyverse)
-library(gridExtra)
-
 #' Returns a cumulative faceted plot on pairwise feature relationships.
 #'
 #' The plot consists of NxN mini-charts where N is number of features.
@@ -9,19 +5,22 @@ library(gridExtra)
 #' are shown above main diagonal. Pairwise feature joint distributions
 #' are shown below main diagonal.
 #'
-#' Note: non-numeric features will be skipped!
+#' Non-numeric features will be skipped. All passed features should
+#' not include any missing data, otherwise an error will be raised
 #'
 #' @param df A data.frame: The target dataframe to explore
 #'
 #' @note Raises: Invalid dataframe specified
 #' @note Raises: Dataframe is empty
 #' @note Raises: No numeric columns present in the dataframe
+#' @note Raises: Features must not include missing data
 #'
 #' @return plot
 #' @export
 #' @import purrr
 #' @import ggplot2
-#' @import gridExtra
+#' @importFrom gridExtra grid.arrange
+#' @import dplyr
 #'
 #' @examples
 #' explore_feature_map(iris)
@@ -30,6 +29,8 @@ explore_feature_map <- function(df) {
         stop("Invalid dataframe specified")
     if (nrow(df) == 0)
         stop("Dataframe is empty")
+    if (sum(apply(df,2, is.na)))
+        stop("Features must not include missing data")
 
     # Subset dataframe features based on user selection
     df <- df[, map_lgl(df, is.numeric)]

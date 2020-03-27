@@ -19,7 +19,8 @@ are shown above main diagonal. Pairwise feature joint distributions
 are shown below main diagonal.
 }
 \details{
-Note: non-numeric features will be skipped!
+Non-numeric features will be skipped. All passed features should
+not include any missing data, otherwise an error will be raised
 }
 \note{
 Raises: Invalid dataframe specified
@@ -27,6 +28,8 @@ Raises: Invalid dataframe specified
 Raises: Dataframe is empty
 
 Raises: No numeric columns present in the dataframe
+
+Raises: Features must not include missing data
 }
 \examples{
 explore_feature_map(iris)
