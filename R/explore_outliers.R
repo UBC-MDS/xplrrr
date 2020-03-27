@@ -7,6 +7,7 @@
 #'
 #' @return data.frame: Dataframe with details on the outliers
 #' @export
+#' @importFrom stats cor na.omit
 #'
 #' @examples
 #' df <- data.frame('col1'= c(1, 2, 1.00, 3, -1, 100),
