@@ -21,6 +21,7 @@
 #' @import ggplot2
 #' @importFrom gridExtra grid.arrange
 #' @import dplyr
+#' @importFrom stats cor
 #'
 #' @examples
 #' explore_feature_map(iris)
